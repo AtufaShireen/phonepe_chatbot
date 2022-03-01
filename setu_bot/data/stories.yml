@@ -1,0 +1,61 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: about_states
+  steps:
+    - intent: users_registered_state
+    - action: get_users_registered_state
+    - intent: users_registered_state_year
+    - intent: amount_recieved_state_year
+    - action: get_amount_recieved_state_year
+    - intent: amount_recieved_quarter
+    - action: get_amount_recieved_quarter
+    - intent: amount_recieved_quarter_year
+    - action: get_amount_recieved_quarter_year
+    - intent: amount_recieved_state_year_quarter
+    - action: get_amount_recieved_state_year_quarter
+    - action: get_users_registered_state_year
+    - intent: users_registered_quarter
+    - action: get_users_registered_quarter
+    - intent: users_registered_quarter_year
+    - action: get_users_registered_quarter_year
+    - intent: users_registered_state_year_quarter
+    - action: get_users_registered_state_year_quarter
+    - intent: top_state_users
+    - action: get_top_state_users
+    - intent: top_state_users_year
+    - action: get_top_state_users_year
+    - intent: top_state_amount
+    - action: get_top_state_amount
+    - intent: top_state_amount_year
+    - action: get_top_state_amount_year
+    - intent: faq
+    - action: get_faq

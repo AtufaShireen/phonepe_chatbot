@@ -1,0 +1,96 @@
+version: "3.0"
+
+intents:
+  - users_registered_state
+  - users_registered_state_year
+  - users_registered_quarter
+  - users_registered_quarter_year
+  - users_registered_state_year_quarter
+  - amount_recieved_state
+  - amount_recieved_state_year
+  - amount_recieved_quarter
+  - amount_recieved_quarter_year
+  - amount_recieved_state_year_quarter
+  - top_state_users
+  - top_state_users_year
+  - top_state_amount
+  - top_state_amount_year
+  - faq
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+entities:
+  - year
+  - state
+  - data_info
+  - state_city_dist
+  - amount_money_earn
+  - number_amount
+  - app_phone_pe
+  - user_people
+  - many_much
+  - comparision
+  - are_were
+  - less_more
+  - quarter
+  - recieved_earn
+  - and_from_than
+  - of_from
+  - from_in
+  - whs
+  - top_wrds
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+# slots:
+#    cuisine:
+#      type: text
+#      mappings:
+#      - type: from_entity
+#        entity: cuisine
+
+       
+actions:
+  - get_users_registered_state
+  - get_users_registered_state_year
+  - get_users_registered_quarter
+  - get_users_registered_quarter_year
+  - get_users_registered_state_year_quarter
+  - get_amount_recieved_state
+  - get_amount_recieved_state_year
+  - get_amount_recieved_quarter
+  - get_amount_recieved_quarter_year
+  - get_amount_recieved_state_year_quarter
+  - get_top_state_users
+  - get_top_state_users_year
+  - get_top_state_amount
+  - get_top_state_amount_year
+  - get_faq

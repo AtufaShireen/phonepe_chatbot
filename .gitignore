@@ -1,0 +1,8 @@
+work_venv
+__pycache__/
+.vscode/
+*.pyc
+.idea/
+.env
+*.json
+setu_bot/.rasa

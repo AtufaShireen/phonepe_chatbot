@@ -1,0 +1,437 @@
+version: "3.0"
+
+nlu:
+
+- intent: users_registered_state
+  examples: |
+    - [what](whs) [users](user_people) in [rajasthan](state)
+    - [users](user_people) are from [andaman-&-nicobar-islands](state)
+    - [users](user_people) were [what](whs)  from [sikkim](state)
+    - registered from [what](whs) [jharkhand](state)
+    - [what](whs) users registered from state [tamil-nadu](state)
+    - [karnataka](state), had how many [users](user_people)
+    - how many [users](user_people) from [telangana](state)
+    - [phonepe](app_phone_pe) [users](user_people) from [arunachal-pradesh](state)
+    - how many users were in [rajasthan](state)
+    - how many [phonepe](app_phone_pe) [users](user_people) are in [jharkhand](state)
+    
+
+- intent: users_registered_state_year
+  examples: |
+    - [what](whs) [users](user_people) [tripura](state) [2020](year)
+    - [what](whs) [bihar](state) [users](user_people) [2020](year)
+    - [what](whs) [2020](year) [users](user_people) [kerala](state) 
+    - [uttar-pradesh](state), had how much users in [2019](year)
+    - [chandigarh](state), had how many users for [2019](year)
+    - [uttar-khand](state), had how many users for the year [2019](year)
+    - [ladakh](state), many users in [2019](year)
+    - how many [users](user_people) are from [bihar](state) for [2020](year)
+    - how many [users](user_people) were from [bihar](state) in [2020](year)
+
+- intent: users_registered_quarter
+  examples: |
+    - [what](whs) [users](user_people) in [quarter 1](quarter)
+    - [what](whs) [users](user_people) in [quarter 1](quarter)
+    - [what](whs) amount of [users](user_people) in [quarter 1](quarter)
+    - [how many](whs) number of [users](user_people) in [quarter 1](quarter)
+    - [what](whs) [quarter 1](quarter) for [users](user_people)
+    - [how many](whs) amount of [users](user_people) in [quarter 1](quarter)
+    - number of [users](user_people) in [quarter 1](quarter)
+
+- intent: users_registered_quarter_year
+  examples: |
+    - [2019](year) [what](whs) [quarter 1](quarter) [users](user_people)
+    - [what](whs) [users](user_people) [2019](year) [quarter 1](quarter)
+    - [what](whs) [users](user_people) for year [2019](year) and [quarter 1](quarter)  
+    - [what](whs) [quarter 1](quarter) [users](user_people) [2019](year)
+    - [2019](year) [what](whs) [quarter 1](quarter) [users](user_people)
+    - how many [users](user_people) registered for [quarter 1](quarter) of [2019](year)
+
+- intent: users_registered_state_year_quarter
+  examples: |
+    - [what](whs) [2020](year) [Q2](quarter) [users](user_people) [west-bengal](state)
+    - [what](whs) [users](user_people) [chattisgarh](state) [2019](year) [Q2](quarter)
+    - [what](whs) amount of [users](user_people) in [lakshadweep](state) for [2019](year) in [Q2](quarter)
+    - [what](whs) is the [users](user_people) in [dadra-&-nagar-haveli-&-daman-&-diu](state) for [2019](year) in [Q2](quarter)
+    - [what](whs) [users](user_people) [dadra-&-nagar-haveli-&-daman-&-diu](state) [Q2](quarter) [2018](year)
+    - [what](whs) [madhya-pradesh](state) [Q2](quarter) [users](user_people) [2019](year)
+    - how many phonepe users are from [madhya-pradesh](state), and [Q2](quarter) of this year, [2019](year)
+ 
+- intent: amount_recieved_state
+  examples: |
+    - [what](whs) [transaction](amount_money_earn) earned through [maharashtra](state)
+    - [what](whs) [transaction](amount_money_earn) from [delhi](state)
+    - [what](whs) [delhi](state) [transaction](amount_money_earn) 
+    - [transaction](amount_money_earn) from [manipur](state)
+    - [transaction](amount_money_earn) earned from [manipur](state)
+    - [money](amount_money_earn) through [goa](state)
+    - [money](amount_money_earn) generated from [goa](state)
+    - [money](amount_money_earn) in [phonepe](app_phone_pe) [gujrat](state) 
+    - [money](amount_money_earn)  amount of [gujrat](state)
+
+- intent: amount_recieved_state_year
+  examples: |
+    - [what](whs) [transaction](amount_money_earn) [gujrat](state) [2019](year)
+    - [what](whs) the [transaction](amount_money_earn) in [meghalaya](state) and [2019](year)
+    - [what](whs) earnings [transaction](amount_money_earn) from  [meghalaya](state) in [2019](year)
+    - [what](whs) [haryana](state) [2019](year) [transaction](amount_money_earn)
+    - [what](whs) [transaction](amount_money_earn) [haryana](state) [2019](year)
+    - [what](whs) [mizoram](state) [transaction](amount_money_earn) [2019](year)
+    - In [what](whs) year [2019](year) [transaction](amount_money_earn) from [himachal-pradesh]
+    - In [2019](year) [transaction](amount_money_earn) from [himachal-pradesh]
+    - total transactions for the [haryana](state) in [2019](year)
+
+- intent: amount_recieved_quarter
+  examples: |
+      - [what](whs) [transaction](amount_money_earn) from [Q1](quarter)
+      - [what](whs) [Q1](quarter) [transaction](amount_money_earn)
+      - [what](whs) [quarter 4](quarter) in [transaction](amount_money_earn)
+      - [what](whs) [quarter 4](quarter) through [transaction](amount_money_earn)
+      - [what](whs) [quarter 4](quarter) from [transaction](amount_money_earn)
+      - total transactions for the [Q1]
+
+- intent: amount_recieved_quarter_year
+  examples: |
+    - [what](whs) [transaction](amount_money_earn) from [quarter 1](quarter), [2019](year)
+    - [what](whs) [quarter 1](quarter), [2019](year) [transaction](amount_money_earn)
+    - [what](whs) [transaction](amount_money_earn) from [2019](year) [quarter 1](quarter),
+    - [what](whs) [transaction](amount_money_earn) [recieve](amount_money_earn) [Q1](quarter) [2019](year)
+    - total transactions for the [quarter 1](quarter), [2019](year)
+
+- intent: amount_recieved_state_year_quarter
+  examples: |
+    - [what](whs) [transaction](amount_money_earn) [quarter 1](quarter) [2020](year) [nagaland](state)
+    - [what](whs) [quarter 1](quarter) [punjab](state) [transaction](amount_money_earn) [2020](year)
+    - [what](whs) [quarter 1](quarter) [2020](year) [jammu-&-kashmir](state) [transaction](amount_money_earn)
+    - [what](whs) [quarter 2](quarter) [2020](year) [odisha](state) [transaction](amount_money_earn)
+    - [what](whs) [quarter 2](quarter) for the [2020](year) in [puducherry](state) [transaction](amount_money_earn)
+    - [transaction](amount_money_earn) for the [puducherry](state) in [quarter 2](quarter) of [2020](year)
+    - [what](whs) [transaction](amount_money_earn) [puducherry](state) had in quarter 2](quarter) of [2020](year)
+    - [transaction](amount_money_earn) of [puducherry](state) in quarter 2](quarter) of [2020](year)
+
+- intent: top_state_users
+  examples: |
+    - [what](whs) [Top](top_wrds) [states](state_city_dist) [users](user_people) 
+    - [what](whs) [users](user_people)  [Top](top_wrds) [states](state_city_dist) 
+    - [what](whs) [Top](top_wrds)  [users](user_people)  [states](state_city_dist)
+    - [how many](whs) [Top](top_wrds)  [users](user_people)  for the [states](state_city_dist)
+    - [engaging](top_wrds) [users](user_people)  [states](state_city_dist)
+
+- intent: top_state_users_year
+  examples: |
+    - [what](whs) [Top](top_wrds) [states](state_city_dist) [users](user_people)  [2020](year)
+    - [what](whs) [users](user_people)  [2020](year) [Top](top_wrds) [states](state_city_dist) 
+    - [what](whs) [Top](top_wrds)  [users](user_people)  [2020](year)  [states](state_city_dist)
+    - top users in [2020](year)
+
+- intent: top_state_amount
+  examples: |
+    - [what](whs) [Top](top_wrds) [states](state_city_dist) [transaction](amount_money_earn)
+    - [what](whs) [transaction](amount_money_earn) [Top](top_wrds) [states](state_city_dist) 
+    - [what](whs) [Top](top_wrds)  [transaction](amount_money_earn) [states](state_city_dist)
+    - [Top](top_wrds) [transaction](amount_money_earn) [states](state_city_dist)
+
+- intent: top_state_amount_year
+  examples: |
+      - [what](whs) [Top](top_wrds) [states](state_city_dist) [2020](year) [transaction](amount_money_earn) 
+      - [what](whs) [2020](year) [Top](top_wrds) [states](state_city_dist)  [transaction](amount_money_earn) 
+      - [what](whs) [Top](top_wrds)  [2020](year) [states](state_city_dist)  [transaction](amount_money_earn) 
+      - [Top](top_wrds) [transaction](amount_money_earn) by the [states](state_city_dist)
+
+- intent: faq
+  examples: |
+      - What is this [data](data_info)
+      - How was this [data](data_info) collected
+      - How can i see this [data](data_info)
+      - Where is this [data](data_info)
+      - where can i get this [data](data_info)
+      - From where did you got this [data](data_info)
+      - How often this [data][data](data_info) gets updated
+      - How often the [data][data](data_info) get updated
+      - When does this [data][data](data_info) get updated
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- lookup: state
+  examples : |
+    - andaman-&-nicobar-islands
+    - andhra-pradesh
+    - arunachal-pradesh
+    - assam
+    - bihar
+    - chandigarh
+    - chattisgarh
+    - dadra-&-nagar-haveli-&-daman-&-diu
+    - goa
+    - gujrat
+    - delhi
+    - haryana
+    - himachal-pradesh
+    - jammu-&-kashmir
+    - jharkand
+    - karnataka
+    - kerala
+    - ladakh
+    - lakshadweep
+    - madhya-pradesh
+    - maharashtra
+    - manipur
+    - meghalaya
+    - mizoram
+    - nagaland
+    - odisha
+    - puducherry
+    - punjab
+    - rajasthan
+    - sikkim
+    - tamil-nadu
+    - telangana
+    - tripura
+    - uttar-pradesh
+    - uttarkhand
+    - west-bengal
+
+- lookup: whs
+  examples: |
+    - what
+    - what was
+    - how
+    - how many
+    - how much
+    - what number of
+    - where
+    - which
+
+- lookup: data_info
+  examples: |
+    - data
+    - info
+    - information
+    - source
+    - pulse data
+    - pulse
+
+- lookup: state_city_dist
+  examples: |
+    - state
+    - city
+    - district
+    - dist
+    - country
+    - region
+- lookup: top_wrds
+  examples: |
+    - top
+    - highest
+    - high
+    - cool
+    - rich
+    - engage
+    - engaging
+
+- lookup: amount_money_earn
+  examples: |
+    - transaction
+    - transaction amount
+    - total transaction
+    - total transaction amount
+    - amount
+    - money
+    - earning
+    - earnings
+    - recieved
+    - recieve
+    - earned
+    - earn
+    - make
+    - crores
+    - rupees
+    - aggregated
+    - transaction
+    - transaction amount
+
+- lookup: number_amount
+  examples: |
+    - number
+    - amount
+    - number of
+    - amount of
+    - total
+
+- lookup: app_phone_pe
+  examples: |
+    - your app
+    - you
+    - phonepe
+    - phone_pe
+    - application
+
+- lookup: user_people
+  examples: |
+    - user
+    - people
+    - users
+    - registered
+    - registerers
+
+- lookup: many_much
+  examples: |
+    - many
+    - much
+
+- lookup: comparision
+  examples: |
+    - match
+    - compare
+    - comparision
+
+- lookup: are_were
+  examples: |
+    - are
+    - were
+    - has
+    - had
+    - have
+
+- lookup: less_more
+  examples: |
+    - less
+    - more
+
+- lookup: quarter
+  examples: |
+    - Q1
+    - Q2
+    - Q3
+    - Q4
+    - quarter 1
+    - quarter 2
+    - quarter 3
+    - quarter 4
+    - quarter_1
+    - quarter_2
+    - quarter_3
+    - quarter_4
+    - quart 1
+    - quart 2
+    - quart 3
+    - quart 4
+
+# - lookup: recieved_earn
+#     - recieved
+#     - recieve
+#     - earned
+#     - earn
+#     - make
+
+- lookup: and_from_than
+  examples: |
+    - and
+    - from
+    - than
+    - then
+    - with
+
+- lookup: of_from
+  examples: |
+    - of
+    - from
+
+- lookup: from_in
+  examples: |
+    - from
+    - in
+
+- lookup: year
+  examples: |
+    - 2019
+    - 2020
+    - 2018
+    - 2017

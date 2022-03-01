@@ -1,0 +1,564 @@
+version: "3.0"
+
+nlu:
+
+- intent: users_registered_state
+  examples: |
+    - [users](user_people) in [manipur](state)
+    - How many [users](user_people) are from [bihar](state)
+    - How many [users](user_people) were from [bihar](state)
+    - How many [users](user_people) [people] are from [bihar](state)
+    - How many registered from [punjab](state)
+    - How many [users](user_people) registered from [himachal-pradesh](state)
+    - What [number](number_amount) of  [users](user_people) registered from [himachal-pradesh](state)
+    - What was the [number](number_amount) of [users](user_people) in [andaman-&nicobar-islands](state)
+    - What is the [number](number_amount) from [jharkand](state)
+    - What is the [number](number_amount) registerers from [jharkand](state)
+    - How many [users](user_people) are registered in [arunachal-pradesh](state)
+    - What [number](number_amount) of [people](user_people) are using [phonepe](app_phonepe) in [madhya-pradesh](state)
+    - How many [users](user_people) registered from [madhya-pradesh](state)
+    - Give details of users in [madhya-pradesh](state)
+    - Information about [madhya-pradesh](state)
+
+- intent: users_registered_state_year
+  examples: |
+    - [users](user_people) in [jharkhand](state) for [2020](year)
+    - [users](user_people) in [2020](year) for [karnataka](state)
+    - How many [users](user_people) are from [assam](state) in year [2018](year)
+    - How many [users](user_people) were from [assam](state) from year [2018](year)
+    - How many [users](user_people) [people] are from [andhra-pradesh](state) from year [2018](year)
+    - How many registered from [himachal-pradesh](state) from year [2018](year)
+    - How many [users](user_people) registered from [punjab](state) from year [2018](year)
+    - What [number](number_amount) of  [users](user_people) registered from [himachal-pradesh](state) from year [2018](year)
+    - What was the [number](number_amount) of [users](user_people) in [andaman-&nicobar-islands](state) in year [2018](year)
+    - What's the [number](number_amount) of [users](user_people) from [arunachal-pradesh](state) in year [2018](year)
+    - What is the [number](number_amount) registerers from [arunachal-pradesh](state) in year [2018](year)
+    - How many [users](user_people) are registered in [arunachal-pradesh](state) in year [2018](year)
+    - What [number](number_amount) of [people](user_people) are using [phonepe](app_phonepe) in [maharashtra](state) in year [2018](year)
+    - How many [users](user_people) registered from [maharashtra](state) in year [2018](year)
+    - Give details of users in [maharashtra](state) in year [2018](year)
+    - Information about [manipur](state) in year [2018](year)
+
+- intent: users_registered_quarter
+  examples: |
+    - users in [quarter 1](quarter)
+    - How many [users](user_people) are from [quarter 1](quarter)
+    - How many [users](user_people) were from [quarter 1](quarter)
+    - How many [users](user_people) [people] are from [quarter 1](quarter)
+    - How many registered in [quarter 2](quarter)
+    - How many [users](user_people) registered from [quarter 2](quarter)
+    - What [number](number_amount) of  [users](user_people) registered from [quarter 2](quarter)
+    - What was the [number](number_amount) of [users](user_people) in [quarter 3](quarter)
+    - What is the [number](number_amount) from [quarter 3](quarter)
+    - What is the [number](number_amount) registerers from [quarter 3](quarter)
+    - How many [users](user_people) are registered in [quarter 3](quarter)
+    - What [number](number_amount) of [people](user_people) are using [phonepe](app_phonepe) in [quarter 4](quarter)
+    - How many [users](user_people) registered from [quarter 4](quarter)
+    - Give details of users in [quarter 4](quarter)
+    - Information about [quarter 4](quarter)
+
+- intent: users_registered_quarter_year
+  examples: |
+    - [users](user_people) for [quarter 1](quarter) and year [2019](year)
+    - [users](user_people) for year [2019](year) and [quarter 1](quarter) 
+    - How many [users](user_people) are from [quarter 1](quarter) and year [2019](year)
+    - How many [users](user_people) were from [quarter 1](quarter) and year [2019](year)
+    - How many [users](user_people) [people] are from [quarter 1](quarter) in year [2019](year)
+    - How many registered in [quarter 2](quarter) and year [2019](year)
+    - How many [users](user_people) registered from [quarter 2](quarter) of year [2019](year)
+    - What [number](number_amount) of [users](user_people) registered in year [2019](year) from [quarter 2](quarter)
+    - What was the [number](number_amount) of [users](user_people) in [quarter 3](quarter) and year [2019](year)
+    - What is the [number](number_amount) from year [2019](year) and [quarter 3](quarter)
+    - What is the [number](number_amount) registerers from [quarter 3](quarter) of year [2019](year)
+    - How many [users](user_people) are registered in [quarter 3](quarter) from year [2019](year)
+    - What [number](number_amount) of [people](user_people) of year [2019](year) are using [phonepe](app_phonepe) in [quarter 4](quarter)
+    - How many [users](user_people) registered from [quarter 4](quarter) of year [2019](year)
+    - Give details of users in [quarter 4](quarter) in year [2019](year)
+    - Information about [quarter 4](quarter) and year [2019](year)
+
+- intent: users_registered_state_year_quarter
+  examples: |
+    - [users](user_people) registered for [punjab](state) in [2019](year)
+    - [users](user_people) registered in [2020](state) from [ladakh](state)
+    - registrations from [ladakh](state) for [2018](year)
+    - How many [users](user_people) are from [andhra-pradesh](state) in year [2018](year) and quarter [Q2](quarter)
+    - How many [users](user_people) were from [andhra-pradesh](state) from year [2018] and quarter [Q2](quarter)
+    - How many [users](user_people) [people] are from [andhra-pradesh](state) from year [2018] and quarter [Q1](quarter)
+    - How many registered from [himachal-pradesh](state) from year [2018] and quarter [Q3](quarter)
+    - How many [users](user_people) registered from [andaman-&-nicobar-islands](state) from year [2018] and quarter [Q4](quarter)
+    - What [number](number_amount) of  [users](user_people) registered from [andaman-&-nicobar-islands](state) from year [2018] and quarter [quarter1](quarter)
+    - What was the [number](number_amount) of [users](user_people) in [andaman-&nicobar-islands](state) in year [2018] and quarter [quarter1](quarter)
+    - What's the [number](number_amount) of [users](user_people) from [arunachal-pradesh](state) in year [2018] and quarter [quarter1](quarter)
+    - What is the [number](number_amount) registerers from [arunachal-pradesh](state) quarter [quarter1](quarter) in year [2018]
+    - How many [users](user_people) are registered in [arunachal-pradesh](state) quarter [Q1](quarter) in year [2018] 
+    - What [number](number_amount) of [people](user_people) are using [phonepe](app_phonepe) in [manipur](state) in year [2018] and quarter [quarter2](quarter)
+    - How many [users](user_people) registered from [manipur](state) in year [2018] [quarter2](quarter)
+    - Give details of users in [manipur](state) in year [2018] and [quarter2](quarter)
+    - Information about [assam](state) in year [2018] [quarter2](quarter)
+ 
+- intent: amount_recieved_state
+  examples: |
+    - [money](amount_money_earn) from [west-bengal](state)
+    - how many crores were from [odisha](state)
+    - [mizoram](state) [money](amount_money_earn)
+    - How much [money](amount_money_earn) you [received](amount_money_earn) from [chandigarh](state)
+    - How much [money](amount_money_earn) did you [received](amount_money_earn) from [chandigarh](state)
+    - How much did [you](app_phone_pe) [earn](amount_money_earn) from [chandigarh](state)
+    - What amount was recieved through [you](app_phone_pe) from [chattisgarh](state)
+    - [amount](amount_money_earn) recieved from [chattisgarh](state)
+    - [amount](amount_money_earn) from [chattisgarh](state)
+    - What was the [amount](amount_money_earn) recieved from [dadra-&-nagar-haveli-&-daman-&-diu](state)
+    - What is the [earnings](amount_money_earn) from [sikkim](state)
+
+- intent: amount_recieved_state_year
+  examples: |
+    - [money](amount_money_earn) [west-bengal](state) [2019](year)
+    - [west-bengal](state) [money](amount_money_earn) [2019](year)
+    - In year [2019](year) [money](amount_money_earn) from [uttarkhand]
+    - How much [money](amount_money_earn) you [received](amount_money_earn) from [dadra-&-nagar-haveli-&-daman-&-diu](state) and year [2020](year)
+    - How much [money](amount_money_earn) did you [received](amount_money_earn) from [dadra-&-nagar-haveli-&-daman-&-diu](state) in [2020](year)
+    - How much did [you](app_phone_pe) [earn](amount_money_earn) in [2020](year) from [sikkim](state)
+    - What amount was recieved through [you](app_phone_pe) from [sikkim](state) of [2020](year)
+    - [amount](amount_money_earn) recieved from [lakshadweep](state) from [2020](year)
+    - [amount](amount_money_earn) from [lakshadweep](state) in [2020](year)
+    - What was the [amount](amount_money_earn) recieved from [2020](year) and [dadra-&-nagar-haveli-&-daman-&-diu](state)
+    - What is the [earnings](amount_money_earn) from [lakshadweep](state) of year [2020](year)
+
+- intent: amount_recieved_quarter
+  examples: |
+      - [money](amount_money_earn) from [Q1](quarter)
+      - aggregated amount from [Q1](quarter)
+      - [Q1](quarter) [money](amount_money_earn)
+      - How much [money](amount_money_earn) [recieve](amount_money_earn) in [Q1](quarter)
+      - How much [money](amount_money_earn) [recieve](amount_money_earn) received in [Q1](quarter)
+      - How much did [you](app_phone_pe) [earn](amount_money_earn) in [Q2](quarter)
+      - How much [you](app_phone_pe) [earn](amount_money_earn) in [Q2](quarter)
+      - What was the [amount](amount_money_earn) recieved in [Q3](quarter)
+      - [amount](amount_money_earn) recieved in [Q3](quarter)
+      - [amount](amount_money_earn) in [Q3](quarter)
+
+- intent: amount_recieved_quarter_year
+  examples: |
+      - [money](amount_money_earn) from [qurater 1](quarter), [2019](year)
+      - [qurater 1](quarter), [2019](year) [money](amount_money_earn)
+      - [money](amount_money_earn) from [2019](year) [qurater 1](quarter),
+      - How much [money](amount_money_earn) [recieve](amount_money_earn) in [Q1](quarter) for year [2019](year)
+      - How much [money](amount_money_earn) [recieve](amount_money_earn) received in [2019](year) and [Q1](quarter)
+      - How much did [you](app_phone_pe) [earn](amount_money_earn) in [2019](year) for quarter [Q2](quarter) 
+      - How much [you](app_phone_pe) [earn](amount_money_earn) in [Q2](quarter) [2019](year)
+      - What was the [amount](amount_money_earn) recieved in [2019](year) in [Q3](quarter)
+      - [amount](amount_money_earn) recieved in [Q3](quarter) and [2019](year)
+      - [amount](amount_money_earn) in [Q3](quarter) and [2019](year) year
+
+- intent: amount_recieved_state_year_quarter
+  examples: |
+      - [money](amount_money_earn) [qurater 1](quarter) [2020](year)
+      - [qurater 1](quarter) [money](amount_money_earn) [2020](year)
+      - [qurater 1](quarter) [2020](year) [money](amount_money_earn)
+      - How much [money](amount_money_earn) [recieve](amount_money_earn) in [Q1](quarter) for year [2019](year) and state [jammu-&-kashmir](state)
+      - How much [money](amount_money_earn) [recieve](amount_money_earn) received from [jammu-&-kashmir](state) in [2019](year) and [Q1](quarter)
+      - How much did [you](app_phone_pe) [earn](amount_money_earn) in [2019](year) for quarter [Q2](quarter) in state [odisha](state)
+      - How much [you](app_phone_pe) [earn](amount_money_earn) in state [odisha](state) [Q2](quarter) [2019](year)
+      - What was the [amount](amount_money_earn) recieved in [2019](year) in [Q3](quarter) and state [rajasthan](state)
+      - [amount](amount_money_earn) recieved in [Q3](quarter) and [2019](year) of state [kerala](state)
+      - [amount](amount_money_earn) in [Q3](quarter) and [2019](year) year and state [kerala](state)
+
+
+- intent: compare_users_state
+  examples: |
+      - [compare](comparision) [users](user_people) [jammu-&-kashmir](state) [puducherry](state)
+      - [compare](comparision) [users](user_people) [jharkand](state) [users](user_people) [puducherry](state)
+      - [compare](comparision) [users](user_people) in [jharkand](state) [with](and_from_than) [rajasthan](state)
+      - [match](comparision) [number](number_amount) of [users](user_people) [of](of_from) [kerala](state) [and](and_from_than) [haryana](state)
+      - How [many](many_much) [users](user_people) in [tamil-nadu](state) [than](and_from_than) [telangana](state)
+      - How [many](many_much) [users](user_people) in [tamil-nadu](state) [then](and_from_than) [telangana](state)
+      - Make [comparision](comparision) of [users](user_people) of [ladakh](state) [and](and_from_than) [uttarkhand](state)
+      - Do a [comparision] of [users](user_people) of [west-bengal](state) [and](and_from_than) [uttarkhand](state)
+
+- intent: compare_users_quarter
+  examples: |
+      - [compare](comparision) [users](user_people) [quarter 2](quarter) [Q3](quarter)
+      - [compare](comparision) [users](user_people) [quarter 2](quarter) [users](user_people) [Q3](quarter)
+      - [compare](comparision) [users](user_people) in [quarter 2](quarter) [with](and_from_than) [Q3](quarter)
+      - [compare](comparision) [users](user_people) in [Q1](quarter) [with](and_from_than) [Q4](quarter)
+      - [match](comparision) [number](number_amount) of [users](user_people) [from](of_from) [Q1](quarter) [and](and_from_than) [Q3](quarter)
+
+- intent: compare_users_quarter_year
+  examples: |
+      - [compare](comparision) [users](user_people) [quarter 2](quarter) [2019](year) [Q3](quarter) [2018](year) 
+      - [compare](comparision) [users](user_people) [quarter 2](quarter) [2019](year) [users](user_people) [Q3](quarter) [2018](year)
+      - [compare](comparision) [users](user_people) of [2019](year) in [quarter 2](quarter) [with](and_from_than) [users](user_people) [Q3](quarter) [2018](year) 
+      - [compare](comparision) [users](user_people) of year [2020] in [Q1](quarter) [with](and_from_than) [Q4](quarter) year [2020] 
+      - [match](comparision) [number](number_amount) in year [2020]  of [users](user_people) [from](of_from) [Q1](quarter) [and](and_from_than) [Q3](quarter) and year [2020]
+
+- intent: compare_users_state_year
+  examples: |
+      - [compare](comparision) [users](user_people) [mizoram](state) [2019](year) with [ladakh](state) [2018](year) 
+      - [compare](comparision) [users](user_people) [mizoram](state) [2019](year) [users](user_people) [ladakh](state) [2018](year)
+      - [compare](comparision) [users](user_people) of [2019](year) in [mizoram](state) [with](and_from_than) [users](user_people) [ladakh](state) [2018](year) 
+      - [compare](comparision) [users](user_people) in [karnataka](state) for year [2019](year) [with](and_from_than) [telngana](state) in year [2020](year)
+      - [match](comparision) [number](number_amount) of [users](user_people) in [2019](year) [of](of_from) [gujrat](state) [and](and_from_than) [haryana](state) [2019](year) 
+      - How [many](many_much) [users](user_people) in [tamil-nadu](state) in [2019](year) [than](and_from_than) [telangana](state) in [2019](year) 
+      - How [many](many_much) [users](user_people) in [tamil-nadu](state) in [2019](year) [then](and_from_than) [telangana](state) and [2019](year) 
+      - Make [comparision](comparision) of [users](user_people) of [2019](year) and [lakshadweep](state) [and](and_from_than) year [2019](year) and [uttarkhand](state)
+      - Do a [comparision] of [users](user_people) of [west-bengal](state) [2019](year) [and](and_from_than) [uttarkhand](state) [2019](year)
+
+- intent: compare_users_state_year_quarter
+  examples: |
+    - [compare](comparision) [users](user_people) [nagaland](state) [2019](year) [quarter 1](quarter) with [lakshadweep](state) [2018](year)  [quarter 1](quarter) 
+    - [compare](comparision) [users](user_people) [nagaland](state) [2019](year) [users](user_people) [quarter 1](quarter)  [tripura](state) [2018](year) [quarter 1](quarter) 
+    - [compare](comparision) [users](user_people) of [quarter 1](quarter)  [2019](year) in [nagaland](state) [with](and_from_than) [users](user_people) [quarter 1](quarter) [tripura](state) [2018](year) 
+    - [compare](comparision) [users](user_people) in [karnataka](state) for year [2019](year) and quarter [Q1](quarter) [with](and_from_than) [telngana](state) in year [2020](year) ,quarter [Q1](quarter)
+    - [match](comparision) [number](number_amount) of [users](user_people) in [2019](year) and quarter [Q1](quarter) [of](of_from) [gujrat](state) [and](and_from_than) [haryana](state) [2019](year) and quarter [Q1](quarter) 
+    - How [many](many_much) [users](user_people) in [tamil-nadu](state) in [2019](year) for quarter [Q1](quarter) [than](and_from_than) [telangana](state) in [2019](year) and quarter [Q1](quarter)
+    - How [many](many_much) [users](user_people) in [tamil-nadu](state) in [2019](year) quarter [Q1](quarter) [then](and_from_than) [telangana](state) and [2019](year) quarter [Q1](quarter)
+    - Make [comparision](comparision) of [users](user_people) of [2019](year) and [tripura](state) [and](and_from_than) year [2019](year) and [uttar-pradesh](state) quarter [Q1](quarter)
+    - Do a [comparision] of [users](user_people) of [west-bengal](state) [2019](year) [and](and_from_than) [uttar-pradesh](state) [2019](year) for quarter [Q1](quarter)
+    - Compare [odisha](state) for year [2019](year) and quarter [Q2](quarter) with [tripura](state) for year [2019](year) and quarter [Q2](quarter)
+
+- intent: compare_amount_state
+  examples: |
+    - [compare](comparision) [amount](amount_money_earn) [rajasthan](state) [goa](state)
+    - [compare](comparision) [amount](amount_money_earn) [delhi](state) [amount](amount_money_earn) [goa](state)
+    - [compare](comparision) [amount](amount_money_earn) in [delhi](state) [with](and_from_than) [goa](state)
+    - How [many](many_much) [amount](amount_money_earn) [are](are_were) [less](less_more) in [himachal-pradesh](state) [from](and_from_than) [jammu-&-kashmir](state)
+    - [compare](comparision) [amount](amount_money_earn) [recieved](amount_money_earn) in [jharkhand](state) [with](and_from_than) [karnataka](state)
+    - [match](comparision) [earnings](amount_money_earn) of [users](user_people) [of](of_from) [kerala](state) [and](and_from_than) [ladakh](state)
+    - How [many](many_much) [amount](amount_money_earn) in [tamil-nadu](state) [and](and_from_than) [telangana](state)
+    - How [much](many_much) did [you](app_phonepe) [make](amount_money_earn) in [tamil-nadu](state) [and](and_from_than) [telangana]
+    - Make [comparision](comparision) of [amount](amount_money_earn) of [tripura](state) [and](and_from_than) [uttar-pradesh](state)
+    - Do a [comparision] of [amount](amount_money_earn) of [west-bengal](state) [and](and_from_than) [uttar-pradesh](state)
+
+- intent: compare_amount_state_year
+  examples: |
+    - [compare](comparision) [amount](amount_money_earn) [puducherry](state) [2019](year) with [tripura](state) [2018](year) 
+    - [compare](comparision) [amount](amount_money_earn) [puducherry](state) [2019](year) [amount](amount_money_earn) [tripura](state) [2018](year)
+    - [compare](comparision) [amount](amount_money_earn) of [2019](year) in [meghalaya](state) [with](and_from_than) [amount](amount_money_earn) [tripura](state) [2018](year) 
+    - [compare](comparision) [amount](amount_money_earn) in [delhi](state) for year [2019](year) [with](and_from_than) [telngana](state) in year [2020](year)
+    - [match](comparision) [number](number_amount) of [amount](amount_money_earn) in [2019](year) [of](of_from) [gujrat](state) [and](and_from_than) [haryana](state) [2019](year) 
+    - How [many](many_much) [amount](amount_money_earn) in [tamil-nadu](state) in [2019](year) [than](and_from_than) [telangana](state) in [2019](year) 
+    - How [many](many_much) [amount](amount_money_earn) in [tamil-nadu](state) and [2019](year) [then](and_from_than) [telangana](state) and [2019](year) 
+    - Make [comparision](comparision) of [amount](amount_money_earn) of [2019](year) and [tripura](state) [and](and_from_than) year [2019](year) and [uttar-pradesh](state)
+    - Do a [comparision] of [amount](amount_money_earn) of [west-bengal](state) [2019](year) [and](and_from_than) [uttar-pradesh](state) [2019](year)
+
+- intent: compare_amount_quarter
+  examples: |
+    - [compare](comparision) [amount](amount_money_earn) [Q1](quarter) [quarter 4](quarter)
+    - [compare](comparision) [amount](amount_money_earn) [Q1](quarter) [amount](amount_money_earn) [quarter 4](quarter)
+    - [compare](comparision) [amount](amount_money_earn) in [Q1](quarter) [with](and_from_than) [quarter 4](quarter)
+    - How [many](many_much) [earning](amount_money_earn) [are](are_were) [less](less_more) in [Q1](quarter) [from](and_from_than) [Q2](quarter)
+    - How [many](many_much) [earning](amount_money_earn) [are](are_were) [more](less_more) in [Q1](quarter) [from](and_from_than) [Q2](quarter)
+    - [compare](comparision) [amount](amount_money_earn) [recieved](amount_money_earn) in [Q4](quarter) [with](and_from_than) [Q3](quarter)
+    - [match](comparision) [amount](amount_money_earn) of [users](user_people) [of](of_from) [Q2](quarter) [and](and_from_than) [Q3](quarter)
+
+- intent: compare_amount_quarter_year
+  examples: |
+    - [compare](comparision) [earning](amount_money_earn) [quarter 2](quarter) [2019](year) [Q3](quarter) [2018](year) 
+    - [earning](amount_money_earn) [quarter 2](quarter) [2019](year) [earning](amount_money_earn) [Q3](quarter) [2018](year)
+    - [compare](comparision) [earning](amount_money_earn) of [2019](year) in [quarter 2](quarter) [with](and_from_than) [earning](amount_money_earn) [Q3](quarter) [2018](year) 
+    - How [many](many_much) [earning](amount_money_earn) [are](are_were) [less](less_more) in [Q1](quarter) and [2019](year) [from](and_from_than) [Q2](quarter) [2019](year)
+    - How [many](many_much) [earning](amount_money_earn) [are](are_were) [more](less_more) in [Q1](quarter) in [2019](year) [from](and_from_than) [Q2](quarter) [2019](year)
+    - [compare](comparision) [amount](amount_money_earn) [recieved](amount_money_earn) in [Q4](quarter) and [2019](year) [with](and_from_than) [Q3](quarter) for [2019](year)
+    - [match](comparision) [amount](amount_money_earn) of [users](user_people) [of](of_from) [Q2](quarter) for [2019](year) [and](and_from_than) [Q3](quarter) and [2019](year)
+
+- intent: compare_amount_state_year_quarter
+  examples: |
+    - [compare](comparision) [earning](amount_money_earn) [meghalaya](state) [2019](year) [quarter 1](quarter) with [tripura](state) [2018](year)  [quarter 1](quarter) 
+    - [compare](comparision) [earning](amount_money_earn) [meghalaya](state) [2019](year) [earning](amount_money_earn) [quarter 1](quarter)  [tripura](state) [2018](year) [quarter 1](quarter) 
+    - [compare](comparision) [earning](amount_money_earn) of [quarter 1](quarter)  [2019](year) in [meghalaya](state) [with](and_from_than) [earning](amount_money_earn) [quarter 1](quarter) [tripura](state) [2018](year)
+    - [compare](comparision) [earning](amount_money_earn) in [delhi](state) for year [2019](year) and quarter [Q1](quarter) [with](and_from_than) [telngana](state) in year [2020](year) ,quarter [Q1](quarter) and state [rajsthan](state)
+    - [match](comparision) [number](number_amount) of [earning](amount_money_earn) in [2019](year) and quarter [Q1](quarter) [of](of_from) [gujrat](state) [and](and_from_than) [haryana](state) [2019](year) and quarter [Q1](quarter) and state [rajsthan](state)
+    - How [many](many_much) [earning](amount_money_earn) in [tamil-nadu](state) in [2019](year) for quarter [Q1](quarter) [than](and_from_than) [telangana](state) in [2019](year) and quarter [Q1](quarter), state [rajsthan](state)
+    - How [many](many_much) [earning](amount_money_earn) in [tamil-nadu](state) in [2019](year) quarter [Q1](quarter) [then](and_from_than) [telangana](state) and [2019](year) quarter [Q1](quarter) state [rajsthan](state)
+    - Make [comparision](comparision) of [earning](amount_money_earn) of [2019](year) and [tripura](state) [and](and_from_than) year [2019](year) and [uttar-pradesh](state) quarter [Q1](quarter) and state [rajsthan](state)
+    - Do a [comparision] of [earning](amount_money_earn) of [west-bengal](state) [2019](year) [and](and_from_than) [uttar-pradesh](state) [2019](year) for quarter [Q1](quarter) for state [rajsthan](state)
+
+
+- intent: top_state_users
+  examples: |
+    - What were top states in [users](user_people) registration
+    - Which [state](state_city_dist) are in top  in [users](user_people) registration
+    - [number](number_amount) of top states using [phonepe](app_phone_pe)
+    - top people using [phonepe](app_phone_pe)
+
+- intent: top_state_users_year
+  examples: |
+      - What were top states in [users](user_people) registration for year [2020](year)
+      - Which [state](state_city_dist) are in top and year [2020](year) in [users](user_people) registration
+      - [number](number_amount) of top states using [phonepe](app_phone_pe) for [2020](year)
+      - top people using [phonepe](app_phone_pe) in [2020](year)
+
+- intent: top_state_amount
+  examples: |
+      - What [were](are_were) top states contribution
+      - Which [state](state_city_dist) [were](are_were) in top in transactions
+      - [number](number_amount) of top states using [phonepe](app_phone_pe)
+      - [amount](amount_money_earn) from top states
+
+- intent: top_state_amount_year
+  examples: |
+      - What were top states in [amount](amount_money_earn) for year [2020](year)
+      - Which [state](state_city_dist) are in top and year [2020](year) in [amount](amount_money_earn)
+      - [number](number_amount) of top states using [phonepe](app_phone_pe) for [2020](year)
+      - top people using [phonepe](app_phone_pe) in [2020](year)
+
+- intent: faq
+  examples: |
+      - What is this [data](data_info)
+      - How was this [data](data_info) collected
+      - How can i see this [data](data_info)
+      - Where is this [data](data_info)
+      - where can i get this [data](data_info)
+      - From where did you got this [data](data_info)
+      - How often this [data][data](data_info) gets updated
+      - How often the [data][data](data_info) get updated
+      - When does this [data][data](data_info) get updated
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - [are](are_were) you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- lookup: state
+  examples : |
+    - andaman-&-nicobar-islands
+    - andhra-pradesh
+    - arunachal-pradesh
+    - assam
+    - bihar
+    - chandigarh
+    - chattisgarh
+    - dadra-&-nagar-haveli-&-daman-&-diu
+    - goa
+    - gujrat
+    - delhi
+    - haryana
+    - himachal-pradesh
+    - jammu-&-kashmir
+    - jharkand
+    - karnataka
+    - kerala
+    - ladakh
+    - lakshadweep
+    - madhya-pradesh
+    - maharashtra
+    - manipur
+    - meghalaya
+    - mizoram
+    - nagaland
+    - odisha
+    - puducherry
+    - punjab
+    - rajasthan
+    - sikkim
+    - tamil-nadu
+    - telangana
+    - tripura
+    - uttar-pradesh
+    - uttarkhand
+    - west-bengal
+
+- lookup: data_info
+  examples: |
+    - data
+    - info
+    - information
+    - source
+    - pulse data
+    - pulse
+
+- lookup: state_city_dist
+  examples: |
+    - state
+    - city
+    - district
+    - dist
+    - country
+    - region
+
+- lookup: amount_money_earn
+  examples: |
+    - amount
+    - money
+    - earning
+    - earnings
+    - recieved
+    - recieve
+    - earned
+    - earn
+    - make
+
+- lookup: number_amount
+  examples: |
+    - number
+    - amount
+    - number of
+    - amount of
+    - total
+
+- lookup: app_phone_pe
+  examples: |
+    - your app
+    - you
+    - phonepe
+    - phone_pe
+    - application
+
+- lookup: user_people
+  examples: |
+    - user
+    - people
+    - users
+    - registered
+    - registerers
+
+- lookup: many_much
+  examples: |
+    - many
+    - much
+
+- lookup: comparision
+  examples: |
+    - match
+    - compare
+    - comparision
+
+- lookup: are_were
+  examples: |
+    - are
+    - were
+    - has
+    - had
+    - have
+
+- lookup: less_more
+  examples: |
+    - less
+    - more
+
+- lookup: quarter
+  examples: |
+    - Q1
+    - Q2
+    - Q3
+    - Q4
+    - quarter 1
+    - quarter 2
+    - quarter 3
+    - quarter 4
+
+# - lookup: recieved_earn
+#     - recieved
+#     - recieve
+#     - earned
+#     - earn
+#     - make
+
+- lookup: and_from_than
+  examples: |
+    - and
+    - from
+    - than
+    - then
+    - with
+
+- lookup: of_from
+  examples: |
+    - of
+    - from
+
+- lookup: from_in
+  examples: |
+    - from
+    - in
+
+- lookup: year
+  examples: |
+    - 2019
+    - 2020
+    - 2018
+    - 2017

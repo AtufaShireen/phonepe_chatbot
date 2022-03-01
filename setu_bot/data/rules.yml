@@ -1,0 +1,88 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: call usera
+  steps:
+  - intent: users_registered_state
+  - action: get_users_registered_state
+
+- rule: call userb
+  steps:
+  - intent: users_registered_state_year
+  - action: get_users_registered_state_year
+
+- rule: call userc
+  steps:
+  - intent: users_registered_quarter
+  - action: get_users_registered_quarter
+
+- rule: call userd
+  steps:
+  - intent: users_registered_quarter_year
+  - action: get_users_registered_quarter_year
+
+- rule: call usere
+  steps:
+  - intent: users_registered_state_year_quarter
+  - action: get_users_registered_state_year_quarter
+
+# - rule: call userf
+#   steps:
+#   - intent: amount_recieved_state
+#   - action: get_users_registered_state
+
+- rule: call userg
+  steps:
+  - intent: amount_recieved_state_year
+  - action: get_amount_recieved_state_year
+
+- rule: call userh
+  steps:
+  - intent: amount_recieved_quarter
+  - action: get_amount_recieved_quarter
+
+- rule: call useri
+  steps:
+  - intent: amount_recieved_quarter_year
+  - action: get_amount_recieved_quarter_year
+
+- rule: call userj
+  steps:
+  - intent: amount_recieved_state_year_quarter
+  - action: get_amount_recieved_state_year_quarter
+
+- rule: call usert
+  steps:
+  - intent: top_state_users
+  - action: get_top_state_users
+
+- rule: call useru
+  steps:
+  - intent: top_state_users_year
+  - action: get_top_state_users_year
+
+- rule: call userv
+  steps:
+  - intent: top_state_amount
+  - action: get_top_state_amount
+
+- rule: call userw
+  steps:
+  - intent: top_state_amount_year
+  - action: get_top_state_amount_year
+
+- rule: call userx
+  steps:
+  - intent: faq
+  - action: get_faq
